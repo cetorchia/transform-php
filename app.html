@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform</title>
+        <script src="app.js"></script>
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="0">
+    </head>
+    <body>
+        <div id="searchAndReplace">
+            <h2>Search and replace</h2>
+            <input id="urlField" type="text" value="" placeholder="URL" onchange="updateNewUrl()"/>
+            <input id="regexField" type="text" value="" placeholder="Regular expression" onchange="updateNewUrl()"/>
+            <input id="replaceField" type="text" value="" placeholder="Replacement" onchange="updateNewUrl()"/>
+            <p><b>New URL:</b><span id="newUrl"></span></p>
+        </div>
+    </body>
+</html>
