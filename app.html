@@ -5,6 +5,7 @@
         <script src="app.js"></script>
         <meta http-equiv="cache-control" content="no-cache">
         <meta http-equiv="expires" content="0">
+        <link rel="stylesheet" type="text/css" href="app.css">
     </head>
     <body>
         <div id="searchAndReplace">
@@ -12,7 +13,13 @@
             <input id="urlField" type="text" value="" placeholder="URL" onchange="updateNewUrl()"/>
             <input id="regexField" type="text" value="" placeholder="Regular expression" onchange="updateNewUrl()"/>
             <input id="replaceField" type="text" value="" placeholder="Replacement" onchange="updateNewUrl()"/>
-            <p><b>New URL:</b><span id="newUrl"></span></p>
+            <button onclick="updateNewUrl()">Go</button>
+            <p><b>New URL:</b></p><div id="newUrl"></span></p>
+        </div>
+        <div id="copyright">
+            <p>Copyright (c) 2016 Carlos E. Torchia</p>
+            <p>License: <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPL</a></p>
+            <p>Source Code: <a href="https://github.com/cetorchia/transform-php">github.com/cetorchia/transform-php</a></p>
         </div>
     </body>
 </html>
